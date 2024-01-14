@@ -1,0 +1,13 @@
+<div class="text-center my-10 flex  flex-col">List of users
+
+    <ul>
+
+        <%= for user <- @users do %>
+            <li>
+                <%= user.name %>
+                    <%= user.email %>
+            </li>
+            <% end %>
+    </ul>
+
+</div>
